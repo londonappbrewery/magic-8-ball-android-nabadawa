@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -13,49 +13,33 @@
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="53dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/title"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="@string/ask_button"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="490dp">
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ball1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
-        <ImageView
-            android:id="@+id/image_eightBall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            app:srcCompat="@drawable/ball1" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp">
-
-        <Button
-            android:id="@+id/askButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:background="#3F51B5"
-            android:text="@string/ask_button"
-            android:textColor="#FFFFFF"
-            />
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>
